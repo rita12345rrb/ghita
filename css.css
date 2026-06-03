@@ -265,3 +265,117 @@ body {
 .contact-item p a:hover {
   color: #ff4da6;
 }
+
+
+
+/* ===================== */
+/* 📱 TABLET (1024px) */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .script {
+    font-size: 90px;
+  }
+
+  .group-images img {
+    height: 260px;
+  }
+
+  .resume {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
+
+
+/* ===================== */
+/* 📱 PHONE (768px) */
+/* ===================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .script {
+    font-size: 55px;
+  }
+
+  /* PROJECT IMAGES */
+  .group-images img {
+    height: 180px;
+  }
+
+  /* PROJECT GRID */
+  .group-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ABOUT */
+  .about {
+    padding: 80px 5%;
+  }
+
+  /* RESUME */
+  .resume {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  /* CONTACT */
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* ===================== */
+/* 📱 SMALL PHONE (480px) */
+/* ===================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .script {
+    font-size: 45px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
+  }
+
+  .group-images {
+    grid-template-columns: 1fr;
+  }
+
+  .group-images img {
+    height: 200px;
+  }
+}
