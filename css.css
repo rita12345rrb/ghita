@@ -74,10 +74,7 @@ body {
   font-weight: 900;
 }
 
-/* ===================== */
-/* 🔥 PROJECTS (CATEGORY STYLE) */
-/* ===================== */
-
+/* PROJECTS */
 .projects {
   padding: 100px 10%;
   background: #f8e7ec;
@@ -90,12 +87,10 @@ body {
   font-size: 40px;
 }
 
-/* كل category */
 .project-group {
   margin-bottom: 60px;
 }
 
-/* العنوان */
 .project-group h3 {
   font-size: 22px;
   margin-bottom: 20px;
@@ -103,14 +98,13 @@ body {
   font-weight: 600;
 }
 
-/* الصور */
 .group-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
 
-/* image */
+/* FIX مهم 🔥 */
 .group-images img {
   width: 100%;
   height: 350px;
@@ -118,21 +112,18 @@ body {
   border-radius: 12px;
   transition: 0.4s;
   cursor: pointer;
+  display: block;
 }
 
-/* hover */
 .group-images img:hover {
   transform: scale(1.05);
 }
 
-/* ===================== */
 /* ABOUT */
-/* ===================== */
-
 .about {
   padding: 120px 10%;
   background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
-  color: rgb(0, 0, 0);
+  color: #000;
   text-align: center;
 }
 
@@ -188,24 +179,7 @@ body {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
-@media(max-width: 900px){
-  .hero h1 {
-    font-size: 50px;
-  }
-
-  .script {
-    font-size: 80px;
-  }
-
-  .left, .right {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-}
-/* ===================== */
 /* CONTACT */
-/* ===================== */
 .contact {
   padding: 120px 10%;
   background: #000;
@@ -213,64 +187,7 @@ body {
   text-align: center;
 }
 
-.contact-container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.contact h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #ff4da6;
-}
-
-.contact p {
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 40px;
-  line-height: 1.6;
-}
-
-/* INFO INLINE */
-.contact-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.contact-item {
-  text-align: center;
-}
-
-.contact-item h4 {
-  color: #ff4da6;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-.contact-item p {
-  color: #fff;
-  font-size: 14px;
-  margin: 0;
-}
-
-.contact-item p a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.contact-item p a:hover {
-  color: #ff4da6;
-}
-
-
-
-/* ===================== */
-/* 📱 TABLET (1024px) */
-/* ===================== */
+/* TABLET */
 @media (max-width: 1024px) {
 
   .hero h1 {
@@ -294,13 +211,9 @@ body {
   }
 }
 
-
-/* ===================== */
-/* 📱 PHONE (768px) */
-/* ===================== */
+/* PHONE */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .navbar {
     flex-direction: column;
     padding: 15px 5%;
@@ -313,32 +226,23 @@ body {
     gap: 10px;
   }
 
-  /* HERO */
   .hero h1 {
     font-size: 38px;
-    line-height: 1.2;
   }
 
   .script {
     font-size: 55px;
   }
 
-  /* PROJECT IMAGES */
-  .group-images img {
-    height: 180px;
-  }
-
-  /* PROJECT GRID */
+  /* FIX IMPORTANT 🔥 */
   .group-images {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  /* ABOUT */
-  .about {
-    padding: 80px 5%;
+  .group-images img {
+    height: 220px;
   }
 
-  /* RESUME */
   .resume {
     flex-direction: column;
     text-align: center;
@@ -347,16 +251,9 @@ body {
   .left, .right {
     width: 100%;
   }
-
-  /* CONTACT */
-  .contact-info {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
-/* ===================== */
-/* 📱 SMALL PHONE (480px) */
-/* ===================== */
+
+/* SMALL PHONE */
 @media (max-width: 480px) {
 
   .hero h1 {
@@ -369,10 +266,6 @@ body {
 
   .projects h2 {
     font-size: 28px;
-  }
-
-  .group-images {
-    grid-template-columns: 1fr;
   }
 
   .group-images img {
