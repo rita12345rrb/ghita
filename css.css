@@ -74,14 +74,12 @@ body {
   font-weight: 900;
 }
 
-/* ===================== */
 /* PROJECTS */
-/* ===================== */
-
 .projects {
   padding: 100px 10%;
   background: #f8e7ec;
   color: #222;
+  overflow: hidden;
 }
 
 .projects h2 {
@@ -103,15 +101,14 @@ body {
 /* GRID */
 .group-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* PC */
   gap: 15px;
 }
 
-/* ✅ FIX IMAGE (IMPORTANT) */
+/* IMAGES (FIX FINAL) */
 .group-images img {
   width: 100%;
-  height: 320px;   /* fixed but balanced */
-  object-fit: cover;
+  height: auto; /* 🔥 الحل */
   border-radius: 12px;
   transition: 0.4s;
   cursor: pointer;
@@ -122,10 +119,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ===================== */
 /* ABOUT */
-/* ===================== */
-
 .about {
   padding: 120px 10%;
   background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
@@ -196,10 +190,12 @@ body {
   transform: translateY(0);
 }
 
-/* ===================== */
 /* TABLET */
-/* ===================== */
 @media (max-width: 1024px) {
+
+  .group-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .hero h1 {
     font-size: 60px;
@@ -207,10 +203,6 @@ body {
 
   .script {
     font-size: 90px;
-  }
-
-  .group-images img {
-    height: 280px;
   }
 
   .resume {
@@ -222,9 +214,7 @@ body {
   }
 }
 
-/* ===================== */
 /* PHONE */
-/* ===================== */
 @media (max-width: 768px) {
 
   .navbar {
@@ -250,10 +240,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .group-images img {
-    height: 220px;
-  }
-
   .resume {
     text-align: center;
   }
@@ -263,9 +249,7 @@ body {
   }
 }
 
-/* ===================== */
 /* SMALL PHONE */
-/* ===================== */
 @media (max-width: 480px) {
 
   .hero h1 {
@@ -278,9 +262,5 @@ body {
 
   .projects h2 {
     font-size: 28px;
-  }
-
-  .group-images img {
-    height: 200px;
   }
 }
