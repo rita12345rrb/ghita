@@ -145,27 +145,71 @@ body {
 
 /* RESUME */
 .resume {
-  display: flex;
-  justify-content: space-between;
   padding: 100px 10%;
   background: #fff;
   color: #333;
+}
+
+/* TITLES */
+.resume h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  border-left: 4px solid #ff4da6;
+  padding-left: 12px;
+}
+
+/* SECTIONS */
+.resume .item {
+  margin-bottom: 20px;
+}
+
+.resume .item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.resume .item span {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.resume .item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
-
-.left, .right {
-  width: 45%;
-}
-
 .skills span {
-  display: inline-block;
   background: #ffb6c1;
-  padding: 8px 15px;
-  margin: 5px;
+  color: #333;
+  padding: 6px 12px;
   border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+  cursor: default;
 }
 
-/* CONTACT */
+.skills span:hover {
+  background: #ff8fa3;
+  transform: translateY(-2px);
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+.tools {
+  margin-top: 10px;
+}
+
 .contact {
   padding: 120px 10%;
   background: #000;
@@ -177,6 +221,45 @@ body {
   font-size: 40px;
   color: #ff4da6;
 }
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+
+@media (max-width: 1024px) {
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* links style (LinkedIn + Instagram) */
+.contact-info a {
+  margin: 0;
+  font-size: 16px;
+  color: #ff4da6;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  color: #ff8fa3;
+  transform: translateY(-2px);
+}
+
+
 
 /* ANIMATION */
 .reveal {
@@ -264,3 +347,30 @@ body {
     font-size: 28px;
   }
 }
+
+
+
+@media (max-width: 1024px) {
+  .skills {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    justify-content: center;
+  }
+
+  .skills span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    gap: 8px;
+  }
+}
+
+
